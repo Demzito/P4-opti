@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+.text-white-important {
+    color:white!important;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -538,7 +542,7 @@ button {
 }
 
 .showScrollTop {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 1;
 }
 
@@ -663,7 +667,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -689,7 +693,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -722,7 +726,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -860,13 +864,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 1.5dppx) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -884,10 +888,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -896,8 +897,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
