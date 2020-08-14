@@ -901,6 +901,26 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .bg-dots-bg {
+        background-image:none;
+        background-color: black;
+    }
+
+    .bg-lines-h2-bg {
+        background-image: none;
+
+    }
+
+    .bg-banniere {
+        background-image: none;
+        background-color: black;
+    }
+
+    .bg-presentation {
+        background-image: none;
+        background-color: black;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
